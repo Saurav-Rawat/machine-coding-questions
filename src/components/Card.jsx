@@ -3,7 +3,6 @@ import "./Card.css";
 
 export const Card = ({ monster }) => {
   const { id, name, email } = monster;
-  console.log({ id });
   return (
     <div className="card-container" key={id}>
       <img
