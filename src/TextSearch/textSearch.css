@@ -1,0 +1,15 @@
+.inputClass {
+    border: 1px solid black;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+.buttonClass {
+    background-color: #5046e5;
+    padding: 4px;
+    border: 1px solid black;
+    border-radius: 4px;
+    color: white;
+}

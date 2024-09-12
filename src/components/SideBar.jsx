@@ -1,6 +1,9 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
 import { CiViewList } from "react-icons/ci";
+import { GrStatusPlaceholder } from "react-icons/gr";
+import { TfiLayoutAccordionMerged } from "react-icons/tfi";
+import { FaSearch } from "react-icons/fa";
 
 export const SideBar = () => {
   return (
@@ -49,7 +52,7 @@ export const SideBar = () => {
                 to="/shimmer"
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
               >
-                <CiViewList />
+                <GrStatusPlaceholder />
                 <span className="ms-3">Shimmer Ui</span>
               </Link>
             </li>
@@ -58,8 +61,17 @@ export const SideBar = () => {
                 to="/accordion"
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
               >
-                <CiViewList />
+                <TfiLayoutAccordionMerged />
                 <span className="ms-3">Accordion</span>
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/text-search"
+                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+              >
+                <FaSearch />
+                <span className="ms-3">Text Search</span>
               </Link>
             </li>
           </ul>

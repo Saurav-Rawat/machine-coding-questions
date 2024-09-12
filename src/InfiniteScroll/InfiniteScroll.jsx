@@ -18,13 +18,13 @@ export const InfiniteScroll = () => {
     getUsers();
   }, [offset]);
 
+  // commented throttled function as now we are not calling api as we have created a
+  // custom mimic function to generate users
+
   useEffect(() => {
     const handleScroll = () => {
-      console.log("scroll called");
       // when we reach the bottom of the page, we want to fetch more users
       if (window.scrollY + window.innerHeight >= document.body.scrollHeight) {
-        console.log("reached bottom of page");
-
         setOffset((prevOffset) => prevOffset + 1);
       }
     };
