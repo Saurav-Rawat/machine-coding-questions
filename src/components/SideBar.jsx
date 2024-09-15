@@ -4,6 +4,7 @@ import { CiViewList } from "react-icons/ci";
 import { GrStatusPlaceholder } from "react-icons/gr";
 import { TfiLayoutAccordionMerged } from "react-icons/tfi";
 import { FaSearch } from "react-icons/fa";
+import { IoIosGrid } from "react-icons/io";
 
 export const SideBar = () => {
   return (
@@ -72,6 +73,15 @@ export const SideBar = () => {
               >
                 <FaSearch />
                 <span className="ms-3">Text Search</span>
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/tictactoe"
+                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+              >
+                <IoIosGrid />
+                <span className="ms-3">Tic tac toe</span>
               </Link>
             </li>
           </ul>

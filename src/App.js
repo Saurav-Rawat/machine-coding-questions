@@ -6,6 +6,7 @@ import { InfiniteScroll } from "./InfiniteScroll";
 import { ShimmerUi } from "./ShimmerUi";
 import { Accordion } from "./Accordion";
 import { TextSearch } from "./TextSearch";
+import { TicTacToe } from "./TicTacToe/TicTacToe";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/shimmer" element={<ShimmerUi />} />
         <Route path="/accordion" element={<Accordion />} />
         <Route path="/text-search" element={<TextSearch />} />
+        <Route path="/tictactoe" element={<TicTacToe />} />
       </Route>
     </Routes>
   );

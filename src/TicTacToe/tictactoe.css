@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 16px;
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+}
+
+.cell {
+    border: 1px solid #ccc;
+    color: black;
+    font-size: min(48px, 10vw);
+    font-weight: bold;
+    text-align: center;
+    aspect-ratio: 1/1;
+}
